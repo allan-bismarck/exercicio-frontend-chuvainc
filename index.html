@@ -14,14 +14,34 @@
     <aside>
         <p id="aside_header">SLACA 2019</p>
         <img id="img_aside" src="aside/dewey 4.png" alt="dewey_4">
-        <ul>
-            <li class="aside_menu_item">Apresentação</li>
-            <li class="aside_menu_item">Comitês</li>
-            <li class="aside_menu_item">Autores</li>
-            <li class="aside_menu_item">Eixos temáticos</li>
-            <li class="aside_menu_item">Trabalhos</li>
-            <li class="aside_menu_item">Contato</li>
-        </ul>
+        <nav>
+            <div onclick="item_selected(0)" class="aside_menu_item">
+                <div></div>
+                <p>Apresentação</p>
+            </div>
+            <div onclick="item_selected(1)" class="aside_menu_item">
+                <div></div>
+                <p>Comitês</p>
+            </div>
+            <div onclick="item_selected(2)" class="aside_menu_item">
+                <div></div>
+                <p>Autores</p>
+            </div>
+            <div onclick="item_selected(3)" class="aside_menu_item">
+                <div></div>
+                <p>Eixos temáticos</p>
+            </div>
+            <div onclick="item_selected(4)" id="aside_menu_item_clicked" class="aside_menu_item">
+                <div></div>
+                <p>Trabalhos</p>
+            </div>
+            <div onclick="item_selected(5)" class="aside_menu_item">
+                <div></div>
+                <p>Contato</p>
+            </div>
+        </nav>
+        <footer></footer>
     </aside>
 </body>
+<script src="script.js"></script>
 </html>
