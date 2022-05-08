@@ -1,14 +1,18 @@
 @charset "UFT-8";
 
 @font-face {
+    font-family: "Quicksand";
+    src: url(fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+/* @font-face {
     font-family: "Baloo2";
     src: url(fonts/Baloo_2/Baloo2-VariableFont_wght.ttf);
-}
+} */
 
 * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Baloo2';
 }
 
 body {
@@ -20,44 +24,136 @@ body {
 }
 
 header {
+    font-family: 'Roboto';
     grid-area: header;
-    background-color: yellow;
+    background-color: #FDF1EB;
     width: 100%;
-    height: 600px;
+    padding: 0.35vw 0vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(92, 92, 92);
+}
+
+#titles > p {
+    font-size: 1vw;
+}
+
+#titles > h1 {
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+#titles > h3 {
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+header > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: -60px;
+    padding: 5px 10px;
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+    background-color: #FDF1EB;
+    border-width: 0.5px;
+}
+
+#globe {
+    margin-top: -5px;
+}
+
+#info_user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: -30px;
+}
+
+#user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#welcome {
+    font-size: 1.15vw;
+    justify-self: end;
+}
+
+#email {
+    font-size: 0.9vw;
+}
+
+#header_img {
+    background-image: url(header/user.png);
+    height: 2.2vw;
+    width: 2.2vw;
+    border-radius: 100%;
+    margin-left: 0.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#header_img > div {
+    font-size: 0.8vw;
+    font-weight: 400;
+    color: white;
+    background-color: red;
+    border-radius: 100%;
+    width: 0.8vw;
+    height: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     grid-area: main;
-    background-color: aqua;
+    background-color: white;
     width: 100%;
     height: 600px;
 }
 
 footer {
     grid-area: footer;
-    background-color: red;
-    background-image: url(footer/imagem\ -\ footer.png);
-    background-repeat: no-repeat;
-    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: baseline;
+}
+
+footer > img {
+    width: 1050px;
+    margin-left: 20px;
+    border-top: solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 0.1px;
 }
 
 aside {
+    grid-area: aside;
+    font-family: 'Quicksand';
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-area: aside;
     box-shadow: 0px 0px 10px 1px rgb(197, 197, 197);
     position: fixed;
 }
 
 #aside_header {
     background-image: linear-gradient(#FFB254 70%, #F2994B);
-    font-size: 2.5vw;
-    font-weight: bold;
+    font-size: 2.2vw;
+    font-weight: 900;
     text-align: center;
     color: white;
-    padding: 0.5vw 0px;
+    padding: 1.1vw 0px;
     width: 100%;
 }
 
@@ -76,9 +172,10 @@ aside nav > div {
 
 aside div > p {
     background-color: white;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 600;
     color: rgb(92, 92, 92);
-    padding: 3px 0px;
+    padding: 0.5vw 0vw;
     padding-left: 25px;
     list-style: none;
     width: 88.5%;
@@ -90,8 +187,8 @@ aside div > p {
     box-shadow: -10px 15px 0px 10px rgb(228, 228, 228);
 }
 
-aside > footer {
+aside > div {
     width: 100%;
-    background-image: none;
     background-color: white;
+    height: 150px;
 }
