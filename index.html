@@ -93,10 +93,80 @@
                 <p class="see_more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi est, sint quasi veritatis consequuntur numquam quam, neque ullam facilis repellendus exercitationem optio quis reprehenderit expedita voluptas doloremque doloribus corrupti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perferendis nobis excepturi corrupti doloremque accusantium, eaque qui, pariatur necessitatibus autem, quia commodi! Quia cumque eligendi vitae beatae? Accusamus, architecto sequi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus repudiandae, consectetur ratione impedit tenetur, ad velit adipisci placeat est, necessitatibus consequuntur quibusdam nihil at unde reiciendis a deserunt fugiat. Vitae?</p>
                 <p class="see_more">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quibusdam molestias eum inventore natus amet laboriosam autem laborum consectetur error eligendi, quisquam quam expedita quas sunt, fugit officiis vitae perferendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ad incidunt, velit eligendi, reprehenderit ut nemo nisi distinctio accusantium obcaecati a quas asperiores. Consectetur quia unde voluptatibus illum voluptas libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur dolorem eos nihil quisquam. Ullam natus optio provident nam cumque velit, voluptas inventore corporis fugit maiores distinctio eligendi dolorem repellat.</p>
             </div>
-            <div id="discution" class="topic">
-                <div id="discution_header"></div>
-                <div class="discution_question"></div>
-                <div class="discution_question"></div>
+            <div id="discutions" class="topic">
+                <h1>Discussões</h1>
+                <div id="discution_header">
+                    <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                    <div id="icons_discutions">
+                        <img src="main/icon1_discutions.png" alt="icon1">
+                        <img src="main/icon2_discutions.png" alt="icon2">
+                        <img src="main/icon3_discutions.png" alt="icon3">
+                    </div>
+                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                    <button id="create_topic">
+                        <img src="main/add.png" alt="add">
+                        <p>criar tópico</p>
+                    </button>
+                    <div id="line"></div>
+                </div>
+                <div id="discutions_content">
+                    <div class="question">
+                        <div class="discution_question">
+                            <h1>Assunto da pergunta aparece aqui</h1>
+                            <h3>Carlos Henrique Santos</h3>
+                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div>
+                                <img class="more" src="main/more.png" alt="more">
+                                <img src="main/favorite_content.png" alt="favorite_content">
+                                <p>1 like</p>
+                                <p>1 resposta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question" id="question_expand" onclick="show_answers()">
+                        <div class="discution_question">
+                            <h1>Assunto da pergunta aparece aqui</h1>
+                            <h3>Carlos Henrique Santos</h3>
+                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div>
+                                <img class="more" src="main/more.png" alt="more">
+                                <img src="main/favorite_content.png" alt="favorite_content">
+                                <p>4 likes</p>
+                                <p>4 respostas</p>
+                            </div>
+                        </div>
+                        <div class="answers discution_question" id="answer_autor">
+                            <h3>Adriano da Silva</h3>
+                            <div class="autor_coautor_simbol">
+                                <p>Autor</p>
+                                <img src="main/autor_coautor.png" alt="autor_coautor">
+                            </div>
+                            <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                        </div>
+                        <div class="answers discution_question">
+                            <h3>Carlos Henrique Santos</h3>
+                            <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.</p>
+                            <p>Obrigado pela resposta, muito interessante o seu trabalho!</p>
+                        </div>
+                        <div class="answers discution_question answer_coautor">
+                            <h3>Carmila Ferreira Andrade</h3>
+                            <div class="autor_coautor_simbol">
+                                <p>Coautor</p>
+                                <img src="main/autor_coautor.png" alt="autor_coautor">
+                            </div>
+                            <p>Também interessante lembrar que o inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            <p>Situado impacto de processo formativo processo resente relato no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                        </div>
+                        <div class="answers discution_question answer_coautor">
+                            <h3>Ana Carolina</h3>
+                            <div class="autor_coautor_simbol">
+                                <p>Coautor</p>
+                                <img src="main/autor_coautor.png" alt="autor_coautor">
+                            </div>
+                            <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

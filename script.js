@@ -1,4 +1,5 @@
 var showContent = false;
+var showAnswers = false;
 
 function item_selected(index_item) {
     var div_itens = document.querySelectorAll("aside > nav > div > div");
@@ -31,6 +32,22 @@ function show_content() {
         document.getElementById('abstract').style.height = "170px";
         for(i = 0; i < p_length; i ++) {
             p[i].style.display = "none";
+        }
+    }
+}
+
+function show_answers() {
+    showAnswers = !showAnswers;
+    var i;
+    var answers = document.getElementsByClassName('answers');
+    answers_length = answers.length;
+    if(showAnswers) {
+        for(i = 0; i < answers_length; i ++) {
+            answers[i].style.display = "block";
+        }
+    } else {
+        for(i = 0; i < answers_length; i ++) {
+            answers[i].style.display = "none";
         }
     }
 }
