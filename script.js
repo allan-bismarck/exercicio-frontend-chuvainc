@@ -51,3 +51,18 @@ function show_answers() {
         }
     }
 }
+
+function alternateDiscutionHeader(button) {
+    if(button == 1) {
+        document.getElementById("discution_header").style.display = "none";
+        document.getElementById("discution_header_2").style.display = "flex";
+    } else {
+        if(button == 2) {
+            document.getElementById("discution_header_2").style.display = "none";
+            document.getElementById("discution_header_3").style.display = "flex";
+        } else {
+            document.getElementById("discution_header_3").style.display = "none";
+            document.getElementById("discution_header_2").style.display = "flex";
+        }
+    }
+}
