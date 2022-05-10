@@ -51,7 +51,7 @@ header > button {
     justify-content: center;
     align-items: center;
     margin-right: -60px;
-    padding: 7px 10px;
+    padding: 0.5vw 1vw;
     color: rgb(92, 92, 92);
     cursor: pointer;
     background-color: #FDF1EB;
@@ -62,11 +62,12 @@ header > button {
 }
 
 header > button > p {
-    padding-right: 7px;
+    padding-right: 0.3vw;
+    font-size: 0.9vw;
 }
 
 #globe {
-    margin-top: -5px;
+    margin-top: -0.3vw;
 }
 
 #info_user {
@@ -148,11 +149,12 @@ main {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #filter_background {
     background-color: rgba(141, 29, 29, 0.534);
-    height: 440px;
+    height: 32.2vw;
     width: 99.2%;
 }
 
@@ -199,11 +201,11 @@ main {
     justify-content: space-between;
     align-items: center;
     align-self: flex-end;
-    width: 210px;
+    width: 15.5vw;
 }
 
 #download_details > p {
-    margin-top: 12px;
+    margin-top: 1vw;
     text-align: end;
     font-size: 1.07vw;
     color: #EF7C3B;
@@ -214,7 +216,7 @@ main {
     color: white;
     background-color: #EF7C3B;
     border: none;
-    padding: 6px 11px;
+    padding: 0.5vw 0.75vw;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
@@ -223,16 +225,20 @@ main {
 
 #download_details button > p {
     font-size: 1.15vw;
-    padding: 0.9px 0px 0.9px 7px;
+    padding: 0.1vw 0vw 0.1vw 0.5vw;
+}
+
+#download_details button > img {
+    width: 1.5vw;
 }
 
 #favorite {
-    padding: 1px 0px;
+    padding: 0.05vw 0vw;
 }
 
 #box_details {
     background-color: white;
-    margin-top: 15px;
+    margin-top: 0.7vw;
     border-style: solid;
     border-width: 0.5px;
     border-color: #f0f0f0;
@@ -253,7 +259,7 @@ main {
 }
 
 #apresentation p, #autors p {
-    margin: 3px 0px;
+    margin: 0.6vw 0vw;
 }
 
 #apresentation {
@@ -274,7 +280,7 @@ main {
 
 #content_details {
     overflow: auto;
-    height: 391px;
+    height: 28.7vw;
 }
 
 #content_details > p {
@@ -633,11 +639,12 @@ main {
 footer {
     grid-area: footer;
     background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 footer > img {
-    width: 1050px;
-    margin-left: 20px;
+    width: 78vw;
+    margin-left: 2vw;
     border-color: #f0f0f0;
 }
 
@@ -650,6 +657,7 @@ aside {
     justify-content: center;
     box-shadow: 0px 0px 10px 1px rgb(197, 197, 197);
     position: fixed;
+    width: 17.5vw;
 }
 
 #aside_header {
@@ -658,7 +666,7 @@ aside {
     font-weight: 900;
     text-align: center;
     color: white;
-    padding: 1.1vw 0px;
+    padding: 1.1vw 0vw;
     width: 100%;
 }
 
@@ -681,7 +689,7 @@ aside div > p {
     font-weight: 600;
     color: rgb(92, 92, 92);
     padding: 0.5vw 0vw;
-    padding-left: 25px;
+    padding-left: 2vw;
     list-style: none;
     width: 88.5%;
     cursor: pointer;
@@ -704,5 +712,19 @@ aside div > p {
 aside > div {
     width: 100%;
     background-color: white;
-    height: 150px;
+    height: 30vw;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        grid-template-areas: "aside" 
+                            "header"
+                            "main"
+                            "footer";
+        grid-template-columns: 100%;
+    }
+
+    aside {
+        position: relative;
+    }
 }
