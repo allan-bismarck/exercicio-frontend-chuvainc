@@ -27,7 +27,7 @@ function show_content() {
         document.getElementById('points').style.display = "none";
         document.getElementById('show_see_more').style.display = "none";
         if(window.screen.width < 800) {
-            document.getElementById('abstract').style.height = "99vw";
+            document.getElementById('abstract').style.height = "535vw";
         } else {
             document.getElementById('abstract').style.height = "39vw";
         }
@@ -38,7 +38,7 @@ function show_content() {
         document.getElementById('points').style.display = "inline";
         document.getElementById('show_see_more').style.display = "inline";
         if(window.screen.width < 800) {
-            document.getElementById('abstract').style.height = "30vw";
+            document.getElementById('abstract').style.height = "145vw";
         } else {
             document.getElementById('abstract').style.height = "12.5vw";
         }

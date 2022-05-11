@@ -677,6 +677,18 @@ footer > img {
     border-color: #f0f0f0;
 }
 
+#footer_desktop {
+    display: flex;
+}
+
+#footer_mobile {
+    display: none;
+}
+
+footer > div {
+    display: none;
+}
+
 aside {
     grid-area: aside;
     font-family: 'Quicksand';
@@ -760,7 +772,7 @@ aside > div {
     }
 
     #aside_header {
-        font-size: 6vw;
+        font-size: 8vw;
         padding: 1.5vw 0vw;
         width: 100%;
     }
@@ -770,7 +782,7 @@ aside > div {
     }
     
     aside div > p {
-        font-size: 4.1vw;
+        font-size: 6vw;
         width: 100%;
         text-align: center;
     }
@@ -792,7 +804,6 @@ aside > div {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: rgb(92, 92, 92);
     }
 
     #titles {
@@ -803,22 +814,24 @@ aside > div {
     }
     
     #titles > p {
-        font-size: 2.5vw;
+        font-size: 5vw;
+        text-align: center;
     }
     
     #titles > h1 {
-        font-size: 5vw;
+        font-size: 7vw;
         text-align: center;
         padding: 2vw;
+        font-weight: bold;
     }
     
     #titles > h3 {
-        font-size: 3vw;
+        font-size: 5vw;
     }
     
     header > button {
         margin-right: 0vw;
-        margin-top: 10vw;
+        margin-top: 45vw;
         padding: 1.5vw 2vw;
         position: absolute;
         left: 2vw;
@@ -826,36 +839,41 @@ aside > div {
     
     header > button > p {
         padding-right: 0.7vw;
-        font-size: 2.5vw;
+        font-size: 4vw;
+    }
+
+    header > button > img {
+        width: 2.5vw;
     }
     
     #globe {
         margin-top: -0.5vw;
-        width: 4vw;
+        width: 6vw;
     }
     
     #info_user {
-        margin-right: 1.5vw;
+        margin-right: 5vw;
+        margin-bottom: 2vw;
         align-self: end;
     }
     
     #welcome {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     
     #email {
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
     
     #header_img {
-        height: 6vw;
-        width: 6vw;
+        height: 10vw;
+        width: 10vw;
     }
     
     #header_img > div {
-        font-size: 2vw;
-        width: 2vw;
-        height: 2vw;
+        font-size: 4vw;
+        width: 4vw;
+        height: 4vw;
     }
 
     main {
@@ -872,41 +890,43 @@ aside > div {
     }
     
     #title_video > h1 {
-        font-size: 3.2vw;
+        font-size: 6vw;
         text-align: center;
     }
     
     #filter_background {
         width: 100%;
+        height: 60vw;
     }
     
     #filter_background > h2 {
-        padding: 1.5vw 2.2vw;
-        font-size: 3vw;
+        padding: 1.5vw 0.6vw;
+        font-size: 5vw;
+        text-align: center;
     }
     
     #content_channel {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 10.5vw 2.4vw;
+        padding: 15.5vw 2.4vw;
         color: white;
     }
-    
+
     #video h1 {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
     
     #video h3 {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     
     #buttons_details {
-        width: 30vw;
+        width: 48vw;
     }
     
     #download_details > p {
-        font-size: 2.1vw;
+        font-size: 3.3vw;
     }
 
     #download_details button {
@@ -917,13 +937,13 @@ aside > div {
     }
     
     #download_details button > p {
-        font-size: 2.5vw;
+        font-size: 4vw;
         padding: 0.6vw 0.5vw 0.6vw 1vw;
     }
     
     #download_details button > img {
-        width: 3vw;
-        padding: 0.5vw;
+        width: 5vw;
+        padding: 1vw;
     }
     
     #favorite {
@@ -931,107 +951,124 @@ aside > div {
     }
     
     #box_details > h1 {
-        font-size: 3vw;
+        font-size: 6vw;
         padding: 1.5vw;
+    }
+
+    #content_details {
+        height: 35vw;
     }
     
     #apresentation {
-        font-size: 2vw;
+        font-size: 5vw;
     }
     
     #autors {
-        font-size: 2.2vw;
+        font-size: 5.5vw;
     }
     
     #university {
-        font-size: 1.8vw;
+        font-size: 4.8vw;
     }
     
     #content_details > p {
-        font-size: 2vw;
+        font-size: 5vw;
     }
     
     .topic > h1 {
-        font-size: 3vw;
+        font-size: 6vw;
         padding: 1.5vw;
     }
     
     .topic p {
-        font-size: 2vw;
+        font-size: 5vw;
+        text-align: justify;
     }
     
     #abstract {
-        height: 30vw;
+        height: 145vw;
     }
     
     #discution_header > h2 {
-        font-size: 3vw;
+        font-size: 6vw;
+        text-align: center;
     }  
     
     #icons_discutions > img {
         padding: 2.5vw;
-        width: 10vw;
+        width: 15vw;
     }
     
     #discution_header > p {
-        font-size: 2vw;
+        font-size: 5vw;
     }
 
     .create_topic {
-        height: 5vw;
+        height: auto;
     }
     
     .create_topic > p {
-        font-size: 3vw;
+        font-size: 5vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 
     .create_topic > img {
-        width: 2vw;
+        width: 5vw;
+        padding-left: 2vw;
     }
     
     .line {
-        margin-top: -2.5vw;
-        height: 4vw;
+        margin-top: -4.5vw;
+        height: 8vw;
     }
     
     #discution_header_2 > h1 {
-        font-size: 2.5vw;
+        font-size: 5vw;
     }
 
     #discution_header_2 > p {
-        font-size: 2.5vw;
+        font-size: 6vw;
     }
 
     #subject {
         height: auto;
+        margin-bottom: 2vw;
     }
     
     #subject > p {
-        font-size: 2.5vw;
+        font-size: 5vw;
         padding: 1vw;
     }
     
     #create_topic_content {
-        height: 20vw;
+        height: 60vw;
     }
     
     #icons_text_content {
-        height: 5vw;
+        height: auto;
     }
     
     #icons_text > img {
-        width: 2vw;
-        height: 2vw;
+        width: 5vw;
+        height: 5vw;
+        padding: 2vw;
     }
     
     #icons_text_content > button {
-        font-size: 3vw;
+        font-size: 5vw;
+        height: auto;
+        padding: 2vw 6vw;
+    }
+
+    #discution_header_2 .line {
+        margin-top: 2vw;
         height: 5vw;
-        padding: 0.3vw 6vw;
     }
     
     #discution_header_3 > h2 {
-        font-size: 3.5vw;
+        font-size: 6vw;
+        text-align: center;
     }
     
     #discution_header_3 > p {
@@ -1040,11 +1077,12 @@ aside > div {
     }
     
     #discution_header_3 > a {
-        font-size: 2.5vw;
+        font-size: 5vw;
     }
     
     #discution_header_3 > button {
-        font-size: 2.5vw;
+        font-size: 5vw;
+        padding: 2vw;
     }
     
     #blur {
@@ -1056,46 +1094,69 @@ aside > div {
     }
     
     #message {
-        margin-top: -16vw;
-        margin-bottom: 5vw;
+        margin-top: -47vw;
+        margin-bottom: 27vw;
     }
     
     #message > img {
-        width: 3vw;
+        width: 7vw;
     }
     
     #message > p {
-        font-size: 2.5vw;
+        font-size: 5vw;
     }
     
     #message > a {
-        font-size: 2vw;
+        font-size: 5vw;
     }
     
     .discution_question > h1 {
-        font-size: 3vw;
+        font-size: 6vw;
     }
     
     .discution_question > h3 {
-        font-size: 2vw;
+        font-size: 5vw;
     }
     
     .discution_question > p {
-        font-size: 1.8vw;
+        font-size: 4.8vw;
+        padding-bottom: 2vw;
     }
     
     .like {
-        width: 4vw;
+        width: 12vw;
     }
     
     .more {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 6vw;
+        height: 6vw;
         margin: 0vw 0.5vw 0vw -1vw;
     }
     
     .autor_coautor_simbol > img {
-        width: 2.5vw;
+        width: 5vw;
+    }
+
+    #footer_desktop {
+        display: none;
+    }
+
+    #footer_mobile {
+        display: flex;
     }
     
+    footer > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > div > p {
+        font-family: 'Quicksand';
+        color: #71478E;
+        text-align: justify;
+        padding: 2vw 5vw;
+        font-size: 5vw;
+    }
 }
