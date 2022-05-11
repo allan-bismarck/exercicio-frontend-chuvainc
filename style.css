@@ -8,6 +8,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    /* border-style: solid; */
 }
 
 body {
@@ -96,6 +97,8 @@ header > button > p {
 
 #header_img {
     background-image: url(header/user.png);
+    background-position: center;
+    background-size: cover;
     height: 2.2vw;
     width: 2.2vw;
     border-radius: 100%;
@@ -147,6 +150,8 @@ main {
     margin-top: 1.75vw;
     background-image: url(main/video.png);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -173,6 +178,7 @@ main {
 }
 
 #filter_background > div > img {
+    width: 6vw;
     border-radius: 100%;
     border-style: solid;
     border-width: 1.9px;
@@ -338,12 +344,12 @@ main {
     font-size: 1.05vw;
     padding: 1.2vw;
     color: rgb(75, 75, 75);
-    margin-right: 10px
+    margin-right: 0.5vw;
 }
 
 #abstract {
     transition-duration: 0.3s;
-    height: 170px;
+    height: 12.5vw;
     cursor: pointer;
 }
 
@@ -357,7 +363,7 @@ main {
 }
 
 #discutions {
-    margin-top: 30px;
+    margin-top: 2vw;
 }
 
 #discution_header {
@@ -371,7 +377,7 @@ main {
     font-family: 'Roboto';
     font-size: 1.3vw;
     color: #EF7C3B;
-    padding-top: 15px;
+    padding-top: 1.8vw;
 }  
 
 #icons_discutions {
@@ -380,7 +386,7 @@ main {
 }
 
 #icons_discutions > img {
-    padding: 25px;
+    padding: 2.5vw;
 }
 
 #discution_header > p {
@@ -397,7 +403,7 @@ main {
     border: none;
     border-radius: 5px;
     box-shadow: 0px 2px 10px 0px rgb(175, 175, 175);
-    height: 35px;
+    height: 2.8vw;
     z-index: 1;
     cursor: pointer;
 }
@@ -406,21 +412,21 @@ main {
     font-family: 'Quicksand';
     color: white;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1.2vw;
 }
 
 .create_topic > img {
-    width: 18px;
-    padding-left: 14px;
-    margin-right: -10px;
+    width: 1.2vw;
+    padding-left: 1vw;
+    margin-right: -0.5vw;
 }
 
 .line {
-    margin-top: -18px;
+    margin-top: -1.5vw;
     border-top-style: solid;
     border-width: 2px;
     width: 97%;
-    height: 30px;
+    height: 2.8vw;
     z-index: 0;
     color: #f0f0f0;
     align-self: center;
@@ -440,7 +446,7 @@ main {
     font-size: 1.2vw;
     color: #EF7C3B;
     padding: 0vw 1vw;
-    margin-bottom: -3px;
+    margin-bottom: -0.3vw;
 }
 
 #subject, #create_topic_content {
@@ -453,12 +459,12 @@ main {
 }
 
 #subject {
-    height: 35px;
+    height: 3.1vw;
     margin: 0.5vw 1vw;
 }
 
 #create_topic_content {
-    height: 85px;
+    height: 6vw;
     margin: 0.5vw 1vw 0vw 1vw;
 }
 
@@ -473,18 +479,27 @@ main {
     border-top-style: none;
     border-color: rgb(216, 216, 216);
     background-color: #EAF1F2;
-    height: 30px;
+    height: 2.2vw;
+}
+
+#icons_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #icons_text > img {
     padding-left: 2vw;
+    width: 1vw;
+    height: 1vw;
 }
 
 #icons_text_content > button {
     font-family: 'Quicksand';
     font-size: 1.1vw;
     font-weight: 600;
-    height: 30px;
+    height: 2.2vw;
     padding: 0.3vw 6vw;
     border: none;
     background-image: linear-gradient(#FFB254 30%, #EF7C3B);
@@ -543,9 +558,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -140px;
-    margin-bottom: 55px;
+    margin-top: -11.5vw;
+    margin-bottom: 5vw;
     z-index: 1;
+}
+
+#message > img {
+    width: 1.5vw;
 }
 
 #message > p {
@@ -567,11 +586,11 @@ main {
 }
 
 .question {
-    margin: 0px 15px 15px 15px;
+    margin: 0vw 1.2vw 1.2vw 1.2vw;
 }
 
 .discution_question {
-    padding: 15px 25px;
+    padding: 1.5vw 2.5vw;
     border-style: solid;
     border-width: 1px;
     border-color: #e2e2e2;
@@ -586,29 +605,33 @@ main {
 
 .discution_question > h3 {
     font-size: 0.9vw;
-    padding-top: 3px;
+    padding: 0.3vw 0vw;
 }
 
 .discution_question > p {
     font-size: 1.05vw;
-    padding: 10px 0px;
+    padding: 1vw 0vw;
 }
 
 .discution_question > div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0vw;
+}
+
+.like {
+    width: 2.4vw;
 }
 
 .more {
-    width: 15px;
-    height: 15px;
-    margin: 0px 5px 0px -5px;
+    width: 1.2vw;
+    height: 1.5vw;
+    margin: 0vw 0.5vw 0vw -0.4vw;
 }
 
 .discution_question > div > p {
-    padding: 0px 0px 0px 10px;
+    padding: 0vw 0vw 0vw 1vw;
 }
 
 #question_expand {
@@ -628,7 +651,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    margin-top: -15px;
+    margin-top: -1.5vw;
 }
 
 .autor_coautor_simbol > p {
@@ -636,14 +659,20 @@ main {
     font-weight: 600;
 }
 
+.autor_coautor_simbol > img {
+    width: 1.4vw;
+}
+
 footer {
     grid-area: footer;
     background-color: rgb(255, 255, 255);
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 footer > img {
-    width: 78vw;
+    width: 95%;
     margin-left: 2vw;
     border-color: #f0f0f0;
 }
@@ -676,6 +705,7 @@ aside {
 
 aside nav {
     width: 100%;
+    background-color: rgb(228, 228, 228);
 }
 
 aside nav > div {
@@ -697,7 +727,6 @@ aside div > p {
 
 .aside_menu_item {
     margin-bottom: 2px;
-    box-shadow: -10px 15px 0px 10px rgb(228, 228, 228);
 }
 
 #aside_menu_item_clicked > p {
@@ -705,7 +734,7 @@ aside div > p {
 }
 
 #aside_menu_item_clicked > div {
-    width: 5px;
+    width: 0.3vw;
     background-color: #F28941;
 }
 
@@ -726,5 +755,347 @@ aside > div {
 
     aside {
         position: relative;
+        width: 100%;
+        box-shadow: none;
     }
+
+    #aside_header {
+        font-size: 6vw;
+        padding: 1.5vw 0vw;
+        width: 100%;
+    }
+    
+    #img_aside {
+        width: 50%;
+    }
+    
+    aside div > p {
+        font-size: 4.1vw;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #aside_menu_item_clicked > div {
+        width: 1vw;
+    }
+
+    .aside_menu_item {
+        margin-bottom: 2px;
+        box-shadow: none;
+    }
+
+    aside > div {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(92, 92, 92);
+    }
+
+    #titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5vw;
+    }
+    
+    #titles > p {
+        font-size: 2.5vw;
+    }
+    
+    #titles > h1 {
+        font-size: 5vw;
+        text-align: center;
+        padding: 2vw;
+    }
+    
+    #titles > h3 {
+        font-size: 3vw;
+    }
+    
+    header > button {
+        margin-right: 0vw;
+        margin-top: 10vw;
+        padding: 1.5vw 2vw;
+        position: absolute;
+        left: 2vw;
+    }
+    
+    header > button > p {
+        padding-right: 0.7vw;
+        font-size: 2.5vw;
+    }
+    
+    #globe {
+        margin-top: -0.5vw;
+        width: 4vw;
+    }
+    
+    #info_user {
+        margin-right: 1.5vw;
+        align-self: end;
+    }
+    
+    #welcome {
+        font-size: 4vw;
+    }
+    
+    #email {
+        font-size: 2.5vw;
+    }
+    
+    #header_img {
+        height: 6vw;
+        width: 6vw;
+    }
+    
+    #header_img > div {
+        font-size: 2vw;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    main {
+        width: 92.5%;
+        grid-template-areas: "title_video"
+                            "download_details"
+                            "content_text";
+        grid-template-columns: 100%;
+        padding: 1.5vw 3.5vw;
+    }
+    
+    #title_video {
+        grid-area: title_video;
+    }
+    
+    #title_video > h1 {
+        font-size: 3.2vw;
+        text-align: center;
+    }
+    
+    #filter_background {
+        width: 100%;
+    }
+    
+    #filter_background > h2 {
+        padding: 1.5vw 2.2vw;
+        font-size: 3vw;
+    }
+    
+    #content_channel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10.5vw 2.4vw;
+        color: white;
+    }
+    
+    #video h1 {
+        font-size: 3vw;
+    }
+    
+    #video h3 {
+        font-size: 2vw;
+    }
+    
+    #buttons_details {
+        width: 30vw;
+    }
+    
+    #download_details > p {
+        font-size: 2.1vw;
+    }
+
+    #download_details button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #download_details button > p {
+        font-size: 2.5vw;
+        padding: 0.6vw 0.5vw 0.6vw 1vw;
+    }
+    
+    #download_details button > img {
+        width: 3vw;
+        padding: 0.5vw;
+    }
+    
+    #favorite {
+        padding: 0.05vw 0vw;
+    }
+    
+    #box_details > h1 {
+        font-size: 3vw;
+        padding: 1.5vw;
+    }
+    
+    #apresentation {
+        font-size: 2vw;
+    }
+    
+    #autors {
+        font-size: 2.2vw;
+    }
+    
+    #university {
+        font-size: 1.8vw;
+    }
+    
+    #content_details > p {
+        font-size: 2vw;
+    }
+    
+    .topic > h1 {
+        font-size: 3vw;
+        padding: 1.5vw;
+    }
+    
+    .topic p {
+        font-size: 2vw;
+    }
+    
+    #abstract {
+        height: 30vw;
+    }
+    
+    #discution_header > h2 {
+        font-size: 3vw;
+    }  
+    
+    #icons_discutions > img {
+        padding: 2.5vw;
+        width: 10vw;
+    }
+    
+    #discution_header > p {
+        font-size: 2vw;
+    }
+
+    .create_topic {
+        height: 5vw;
+    }
+    
+    .create_topic > p {
+        font-size: 3vw;
+    }
+
+    .create_topic > img {
+        width: 2vw;
+    }
+    
+    .line {
+        margin-top: -2.5vw;
+        height: 4vw;
+    }
+    
+    #discution_header_2 > h1 {
+        font-size: 2.5vw;
+    }
+
+    #discution_header_2 > p {
+        font-size: 2.5vw;
+    }
+
+    #subject {
+        height: auto;
+    }
+    
+    #subject > p {
+        font-size: 2.5vw;
+        padding: 1vw;
+    }
+    
+    #create_topic_content {
+        height: 20vw;
+    }
+    
+    #icons_text_content {
+        height: 5vw;
+    }
+    
+    #icons_text > img {
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    #icons_text_content > button {
+        font-size: 3vw;
+        height: 5vw;
+        padding: 0.3vw 6vw;
+    }
+    
+    #discution_header_3 > h2 {
+        font-size: 3.5vw;
+    }
+    
+    #discution_header_3 > p {
+        padding: 5vw;
+        text-align: center;
+    }
+    
+    #discution_header_3 > a {
+        font-size: 2.5vw;
+    }
+    
+    #discution_header_3 > button {
+        font-size: 2.5vw;
+    }
+    
+    #blur {
+        margin: 0vw 1.5vw 1.5vw 1.5vw;
+    }
+    
+    #discution_header_3 .discution_question {
+        padding-bottom: 3vw;
+    }
+    
+    #message {
+        margin-top: -16vw;
+        margin-bottom: 5vw;
+    }
+    
+    #message > img {
+        width: 3vw;
+    }
+    
+    #message > p {
+        font-size: 2.5vw;
+    }
+    
+    #message > a {
+        font-size: 2vw;
+    }
+    
+    .discution_question > h1 {
+        font-size: 3vw;
+    }
+    
+    .discution_question > h3 {
+        font-size: 2vw;
+    }
+    
+    .discution_question > p {
+        font-size: 1.8vw;
+    }
+    
+    .like {
+        width: 4vw;
+    }
+    
+    .more {
+        width: 2.5vw;
+        height: 2.5vw;
+        margin: 0vw 0.5vw 0vw -1vw;
+    }
+    
+    .autor_coautor_simbol > img {
+        width: 2.5vw;
+    }
+    
 }

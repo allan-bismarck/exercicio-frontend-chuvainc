@@ -6,10 +6,14 @@ function item_selected(index_item) {
     var p_itens = document.querySelectorAll("aside > nav > div > p");
     var length_itens = div_itens.length;
     for(i = 0; i < length_itens; i ++) {
-        div_itens[i].style.width = "0px";
+        div_itens[i].style.width = "0vw";
         p_itens[i].style.backgroundColor =  "white";
     }
-    div_itens[index_item].style.width = "5px";
+    if(window.screen.width < 800) {
+        div_itens[index_item].style.width = "1vw";
+    } else {
+        div_itens[index_item].style.width = "0.3vw";
+    }
     div_itens[index_item].style.backgroundColor = "#F28941";
     p_itens[index_item].style.backgroundColor =  "#FDF1EB";
 }
@@ -22,14 +26,22 @@ function show_content() {
     if(showContent) {
         document.getElementById('points').style.display = "none";
         document.getElementById('show_see_more').style.display = "none";
-        document.getElementById('abstract').style.height = "540px";
+        if(window.screen.width < 800) {
+            document.getElementById('abstract').style.height = "99vw";
+        } else {
+            document.getElementById('abstract').style.height = "39vw";
+        }
         for(i = 0; i < p_length; i ++) {
             p[i].style.display = "block";
         }
     } else {
         document.getElementById('points').style.display = "inline";
         document.getElementById('show_see_more').style.display = "inline";
-        document.getElementById('abstract').style.height = "170px";
+        if(window.screen.width < 800) {
+            document.getElementById('abstract').style.height = "30vw";
+        } else {
+            document.getElementById('abstract').style.height = "12.5vw";
+        }
         for(i = 0; i < p_length; i ++) {
             p[i].style.display = "none";
         }
