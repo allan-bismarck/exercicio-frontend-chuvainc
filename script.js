@@ -1,5 +1,6 @@
 var showContent = false;
 var showAnswers = false;
+var showMenuAside = false;
 
 function item_selected(index_item) {
     var div_itens = document.querySelectorAll("aside > nav > div > div");
@@ -75,6 +76,21 @@ function alternateDiscutionHeader(button) {
         } else {
             document.getElementById("discution_header_3").style.display = "none";
             document.getElementById("discution_header_2").style.display = "flex";
+        }
+    }
+}
+
+function show_menu_aside() {
+    if(window.screen.width < 800) {
+        showMenuAside = !showMenuAside;
+        if(showMenuAside) {
+            document.querySelector('#aside_header > img').style.transform = "rotate(90deg)";
+            document.getElementById("img_aside").style.display = "none";
+            document.querySelector('aside > nav').style.display = "flex";
+        } else {
+            document.querySelector('#aside_header > img').style.transform = "rotate(0deg)";
+            document.getElementById("img_aside").style.display = "flex";
+            document.querySelector('aside > nav').style.display = "none";
         }
     }
 }
