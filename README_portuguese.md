@@ -1,4 +1,4 @@
-<a href="README.md" target="_blank">Read this page in English<a/> 
+<a href="README.md" target="_blank">Read this page in english<a/> 
 
 # Exercício Front End Chuva.inc
 ## Link: https://allanbismarck123.github.io/exercicio-frontend-chuvainc/
