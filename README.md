@@ -1,7 +1,7 @@
 <a href="README_portuguese.md" target="_blank">Leia esta página em português<a/> 
 
 # Exercício Front End Chuva.inc
-## Link: Link: https://allanbismarck123.github.io/exercicio-frontend-chuvainc/
+## Link: https://allanbismarck123.github.io/exercicio-frontend-chuvainc/
 
 ## <img src="gif.gif" width="auto" height="auto"/>
 ## ✨ Description
