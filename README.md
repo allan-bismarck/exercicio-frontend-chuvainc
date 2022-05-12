@@ -6,7 +6,7 @@
 ## <img src="gif.gif" width="auto" height="auto"/>
 ## ✨ Description
 
-#### <p align="justify">The Project consists of a newspaper page where the user can access the main menu and navigate through the tabs and access the content that interests him. The categories displayed through the menu are Sports (Soccer, Volleyball, Basketball and MMA), Politics (National and International), Entertainment (Movies, Series and Soap Operas) and Curiosities (Animals and Places). According to the chosen category, the site modifies its colors.</p>
+#### <p align="justify">The project consists of a proposed project in the development of a selection process for intern in front end of the company.inc, a site layout was proposed through prototyping in Figma and from there the use of web development technologies is developed. This work was done thinking about a practical and easy responsiveness.</p>
 
 
 ## ✨ Technologies used 
